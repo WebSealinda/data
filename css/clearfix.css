@@ -1,0 +1,24 @@
+/*清除浮动1*/
+.clearfix {
+	display: inline-block;
+}
+.clearfix:after {
+	display: block;
+	content: ".";
+	height: 0;
+	line-height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/*清除浮动2*/
+.clearfix:before,.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;   //IE兼容
+}

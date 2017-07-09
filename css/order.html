@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>order</title>
+		<link rel="shortcut icon" href="logo.ico" />
+		<!--<link rel="stylesheet" type="text/css" media="screen and (min-width:760px) and (max-device-width:1089px)" href="css/car-orderpad.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/car-order.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<script type="text/javascript" src="js/order.js" ></script>
+	</head>
+	<body>
+			<div class="top">
+			<div class="topMid">
+				<span>
+				<a href="login.html">登录</a>|
+				<a href="register.html">注册</a>|
+				<a href="order.html">我的辣一家</a>
+				</span>
+			</div>
+		</div>
+		<header><!--[if IE]>
+			
+		<![endif]-->
+		<div class="logo">
+			<a href="#"></a>
+		</div>
+		<div class="headerTitle">我的订单</div>
+		<div class="back">
+		&nbsp;&nbsp;|&nbsp;
+		<a href="index.html" id="back">返回首页</a>
+		</div>
+		<div class="search">
+			<form>
+				<input type="search" class="ipt-search" placeholder="订单搜索"/>
+				<a href="#" class="btn-search" title="搜索"></a>
+			</form>
+		</div>
+		<div class="clear"></div>
+		</header>
+		<nav>
+			<ul id="menu">
+				<li class="hover" onclick="setTab(0)"><a href="#">全部订单</a></li>
+				<li onclick="setTab(1)"><a href="#">待付款</a></li>
+				<li onclick="setTab(2)"><a href="#">待发货</a></li>
+				<li onclick="setTab(3)"><a href="#">待收货</a></li>
+				<li onclick="setTab(4)"><a href="#">待评价</a></li>
+			</ul>
+		</nav>
+		<section>
+			<div class="th">
+				<div class="goods">商品</div>
+				<div class="people">收货人</div>
+				<div class="order-unitCost">单价(元)</div>
+				<div class="order-number">数量</div>
+				<div class="order-control">订单操作</div>
+				<!--<div class="clear"></div>-->
+			</div>
+			<div id="main0">
+				<div class="order" id="order1">
+					<div class="goods-allMsg">
+					<div class="thing">
+						<div class="dtl-thing">
+							<a href="#" class="img"></a>
+							<div class="msg"><a href="#" id="title">美味辣条</a></div>
+						<div class="clear"></div>
+							
+						</div>
+						<div class="dtl-thing" id="lastThing1">
+							<a href="#" class="img"></a>
+							<div class="msg"><a href="#" id="title">美味辣条</a></div>
+						<div class="clear"></div>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div id="people"><span>小仙女</span></div>
+					<div class="order-cost">
+						<div class="dtl-cost">10.00</div>
+						<div class="dtl-cost" id="lastCost1">10.00</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-num">
+						<div class="dtl-mun">1</div>
+						<div class="dtl-mun" id="lastNum1">1</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-ctrl">
+						<!--<div class="dtl-ctrl">-->
+						    <a href="#">确认收货</a><br />
+						    <a href="#">评价</a><br />
+						    <a href="#">申请售后</a><br />
+						<!--</div>-->
+					</div>
+				</div>
+				  <div class="order-total">
+						<div class="No">订单号：<span>00000002</span></div>
+						<div class="money">总价：<span>20.00</span></div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="order" id="order2">
+					<div class="goods-allMsg">
+					<div class="thing">
+						<div class="dtl-thing" id="lastThing2">
+							<a href="#" class="img"></a>
+							<div class="msg"><a href="#" id="title">美味辣条</a></div>
+						</div>
+					</div>
+					<div id="people">小仙女</div>
+					<div class="order-cost">
+						<div class="dtl-cost" id="lastCost2">10.00</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-num">
+						<div class="dtl-mun" id="lastNum2">1</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-ctrl">
+						<!--<div class="dtl-ctrl">-->
+						    <a href="#">确认收货</a><br />
+						    <a href="#">评价</a><br />
+						    <a href="#">申请售后</a><br />
+						<!--</div>-->
+					</div>
+					</div>
+					<div class="order-total">
+						<div class="No">订单号：<span>00000002</span></div>
+						<div class="money">总价：<span>10.00</span></div>
+						<div class="clear"></div>
+					
+				 </div>
+				</div>
+			</div>
+			
+			
+			<div id="main1">
+				<div class="order" id="order1">
+					<div class="goods-allMsg">
+					<div class="thing">
+						<div class="dtl-thing">
+							<a href="#" class="img"></a>
+							<div class="msg"><a href="#" id="title">美味辣条</a></div>
+						<div class="clear"></div>
+							
+						</div>
+						<div class="dtl-thing" id="lastThing1">
+							<a href="#" class="img"></a>
+							<div class="msg"><a href="#" id="title">美味辣条</a></div>
+						<div class="clear"></div>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div id="people">小仙女</div>
+					<div class="order-cost">
+						<div class="dtl-cost">10.00</div>
+						<div class="dtl-cost" id="lastCost1">10.00</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-num">
+						<div class="dtl-mun">1</div>
+						<div class="dtl-mun" id="lastNum1">1</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-ctrl">
+						<!--<div class="dtl-ctrl">-->
+						    <a href="#">确认收货</a><br />
+						    <a href="#">评价</a><br />
+						    <a href="#">申请售后</a><br />
+						<!--</div>-->
+					</div>
+				</div>
+				  <div class="order-total">
+						<div class="No">订单号：<span>00000002</span></div>
+						<div class="money">总价：<span>20.00</span></div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="order" id="order2">
+					<div class="goods-allMsg">
+					<div class="thing">
+						<div class="dtl-thing" id="lastThing2">
+							<a href="#" class="img"></a>
+							<div class="msg"><a href="#" id="title">美味辣条</a></div>
+						</div>
+					</div>
+					<div id="people">小仙女</div>
+					<div class="order-cost">
+						<div class="dtl-cost" id="lastCost2">10.00</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-num">
+						<div class="dtl-mun" id="lastNum2">1</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-ctrl">
+						<!--<div class="dtl-ctrl">-->
+						    <a href="#">确认收货</a><br />
+						    <a href="#">评价</a><br />
+						    <a href="#">申请售后</a><br />
+						<!--</div>-->
+					</div>
+					</div>
+					<div class="order-total">
+						<div class="No">订单号：<span>00000002</span></div>
+						<div class="money">总价：<span>10.00</span></div>
+						<div class="clear"></div>
+					
+				 </div>
+				</div>
+			</div>
+			
+			
+			<div id="main2">
+				<div class="order" id="order1">
+					<div class="goods-allMsg">
+					<div class="thing">
+						<div class="dtl-thing">
+							<a href="#" class="img"></a>
+							<div class="msg"><a href="#" id="title">美味辣条</a></div>
+						<div class="clear"></div>
+							
+						</div>
+						<div class="dtl-thing" id="lastThing1">
+							<a href="#" class="img"></a>
+							<div class="msg"><a href="#" id="title">美味辣条</a></div>
+						<div class="clear"></div>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div id="people">小仙女</div>
+					<div class="order-cost">
+						<div class="dtl-cost">10.00</div>
+						<div class="dtl-cost" id="lastCost1">10.00</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-num">
+						<div class="dtl-mun">1</div>
+						<div class="dtl-mun" id="lastNum1">1</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-ctrl">
+						<!--<div class="dtl-ctrl">-->
+						    <a href="#">确认收货</a><br />
+						    <a href="#">评价</a><br />
+						    <a href="#">申请售后</a><br />
+						<!--</div>-->
+					</div>
+				</div>
+				  <div class="order-total">
+						<div class="No">订单号：<span>00000002</span></div>
+						<div class="money">总价：<span>20.00</span></div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="order" id="order2">
+					<div class="goods-allMsg">
+					<div class="thing">
+						<div class="dtl-thing" id="lastThing2">
+							<a href="#" class="img"></a>
+							<div class="msg"><a href="#" id="title">美味辣条</a></div>
+						</div>
+					</div>
+					<div id="people">小仙女</div>
+					<div class="order-cost">
+						<div class="dtl-cost" id="lastCost2">10.00</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-num">
+						<div class="dtl-mun" id="lastNum2">1</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-ctrl">
+						<!--<div class="dtl-ctrl">-->
+						    <a href="#">确认收货</a><br />
+						    <a href="#">评价</a><br />
+						    <a href="#">申请售后</a><br />
+						<!--</div>-->
+					</div>
+					</div>
+					<div class="order-total">
+						<div class="No">订单号：<span>00000002</span></div>
+						<div class="money">总价：<span>10.00</span></div>
+						<div class="clear"></div>
+					
+				 </div>
+				</div>
+			</div>
+			
+			
+			<div id="main3">
+				<div class="order" id="order1">
+					<div class="goods-allMsg">
+					<div class="thing">
+						<div class="dtl-thing">
+							<a href="#" class="img"></a>
+							<div class="msg"><a href="#" id="title">美味辣条</a></div>
+						<div class="clear"></div>
+							
+						</div>
+						<div class="dtl-thing" id="lastThing1">
+							<a href="#" class="img"></a>
+							<div class="msg"><a href="#" id="title">美味辣条</a></div>
+						<div class="clear"></div>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div id="people">小仙女</div>
+					<div class="order-cost">
+						<div class="dtl-cost">10.00</div>
+						<div class="dtl-cost" id="lastCost1">10.00</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-num">
+						<div class="dtl-mun">1</div>
+						<div class="dtl-mun" id="lastNum1">1</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-ctrl">
+						<!--<div class="dtl-ctrl">-->
+						    <a href="#">确认收货</a><br />
+						    <a href="#">评价</a><br />
+						    <a href="#">申请售后</a><br />
+						<!--</div>-->
+					</div>
+				</div>
+				  <div class="order-total">
+						<div class="No">订单号：<span>00000002</span></div>
+						<div class="money">总价：<span>20.00</span></div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="order" id="order2">
+					<div class="goods-allMsg">
+					<div class="thing">
+						<div class="dtl-thing" id="lastThing2">
+							<a href="#" class="img"></a>
+							<div class="msg"><a href="#" id="title">美味辣条</a></div>
+						</div>
+					</div>
+					<div id="people">小仙女</div>
+					<div class="order-cost">
+						<div class="dtl-cost" id="lastCost2">10.00</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-num">
+						<div class="dtl-mun" id="lastNum2">1</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-ctrl">
+						<!--<div class="dtl-ctrl">-->
+						    <a href="#">确认收货</a><br />
+						    <a href="#">评价</a><br />
+						    <a href="#">申请售后</a><br />
+						<!--</div>-->
+					</div>
+					</div>
+					<div class="order-total">
+						<div class="No">订单号：<span>00000002</span></div>
+						<div class="money">总价：<span>10.00</span></div>
+						<div class="clear"></div>
+					
+				 </div>
+				</div>
+			</div>
+			
+			
+			<div id="main4">
+				<div class="order" id="order1">
+					<div class="goods-allMsg">
+					<div class="thing">
+						<div class="dtl-thing">
+							<a href="#" class="img"></a>
+							<div class="msg"><a href="#" id="title">美味辣条</a></div>
+						<div class="clear"></div>
+							
+						</div>
+						<div class="dtl-thing" id="lastThing1">
+							<a href="#" class="img"></a>
+							<div class="msg"><a href="#" id="title">美味辣条</a></div>
+						<div class="clear"></div>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div id="people">小仙女</div>
+					<div class="order-cost">
+						<div class="dtl-cost">10.00</div>
+						<div class="dtl-cost" id="lastCost1">10.00</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-num">
+						<div class="dtl-mun">1</div>
+						<div class="dtl-mun" id="lastNum1">1</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-ctrl">
+						<!--<div class="dtl-ctrl">-->
+						    <a href="#">确认收货</a><br />
+						    <a href="#">评价</a><br />
+						    <a href="#">申请售后</a><br />
+						<!--</div>-->
+					</div>
+				</div>
+				  <div class="order-total">
+						<div class="No">订单号：<span>00000002</span></div>
+						<div class="money">总价：<span>20.00</span></div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="order" id="order2">
+					<div class="goods-allMsg">
+					<div class="thing">
+						<div class="dtl-thing" id="lastThing2">
+							<a href="#" class="img"></a>
+							<div class="msg"><a href="#" id="title">美味辣条</a></div>
+						</div>
+					</div>
+					<div id="people">小仙女</div>
+					<div class="order-cost">
+						<div class="dtl-cost" id="lastCost2">10.00</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-num">
+						<div class="dtl-mun" id="lastNum2">1</div>
+						<div class="clear"></div>
+					</div>
+					<div class="order-ctrl">
+						<!--<div class="dtl-ctrl">-->
+						    <a href="#">确认收货</a><br />
+						    <a href="#">评价</a><br />
+						    <a href="#">申请售后</a><br />
+						<!--</div>-->
+					</div>
+					</div>
+					<div class="order-total">
+						<div class="No">订单号：<span>00000002</span></div>
+						<div class="money">总价：<span>10.00</span></div>
+						<div class="clear"></div>
+					
+				 </div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="fTop">
+				<div class="fLeft">
+					客服电话<br>400-8888-8888
+				</div>
+				<div class="fMid">
+					<a href="index.html"><img src="img/logo.png" /></a>
+				</div>
+				<div class="fRight">
+					正品保证<br />假一赔十
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="fBottom">
+				<a href="#">关于我们</a>|
+				<a href="#">帮助中心</a>|
+				<a href="#">售后服务</a>|
+				<a href="#">商务合作</a>|
+				<a href="#">友情链接</a>
+				<br/>"辣"一家版权所有©2007-20xx
+			</div>
+		</footer>
+	</body>
+</html>
